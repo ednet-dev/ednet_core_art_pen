@@ -1,4 +1,3 @@
-
 /*
 http://opensource.org/licenses/
 
@@ -38,20 +37,18 @@ import 'package:dartling_default_app/dartling_default_app.dart';
 import 'package:art_pen/art_pen.dart';
 
 void initArtData(ArtRepo artRepo) {
-   var artModels =
-       artRepo.getDomainModels(ArtRepo.artDomainCode);
+  var artModels = artRepo.getDomainModels(ArtRepo.artDomainCode);
 
-   var artPenEntries =
-       artModels.getModelEntries(ArtRepo.artPenModelCode);
-   initArtPen(artPenEntries);
-   artPenEntries.display();
-   artPenEntries.displayJson();
+  var artPenEntries = artModels.getModelEntries(ArtRepo.artPenModelCode);
+  initArtPen(artPenEntries);
+  artPenEntries?.display();
+  artPenEntries?.displayJson();
 }
 
 void showArtData(ArtRepo artRepo) {
-   var mainView = new View(document, "main");
-   mainView.repo = artRepo;
-   new RepoMainSection(mainView);
+  var mainView = new View(document, "main");
+  mainView.repo = artRepo;
+  new RepoMainSection(mainView);
 }
 
 void main() {

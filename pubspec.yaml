@@ -5,8 +5,9 @@ description: DArt Pen is a Logo language. dartling is a domain model framework.
 homepage: http://ondart.me/
 documentation: http://goo.gl/OvQWwN
 environment:
-  sdk: '>=1.10.0 <2.0.0'
+  sdk: '>=2.18.6 <3.0.0'
 dependencies:
-  browser: ^0.10.0+2 
-  dartling: ^2.0.2
-  dartling_default_app: ^2.0.2
+  ednet_core:
+    path: ../../../ednet_cms/packages/ednet_core
+  dartling_default_app:
+    path: ../ednet_dartling_default_app

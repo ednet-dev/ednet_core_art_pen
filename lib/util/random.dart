@@ -5,13 +5,13 @@ double randomDouble(double max) {
   return randomDouble > max ? max : randomDouble;
 }
 
-// imported from dartling
+// imported from ednet_core
 //int randomInt(int max) => new Random().nextInt(max);
 
 randomListElement(List list) => list[randomInt(list.length - 1)];
 
 String randomColor() => randomListElement(colorList());
-String randomColorCode() => colorMap()[randomColor()];
+String? randomColorCode() => colorMap()[randomColor()];
 
 Map randomPoint(double maxX, double maxY) {
   var x = randomDouble(maxX);

@@ -1,5 +1,4 @@
-
-import 'package:dartling/dartling.dart';
+import 'package:ednet_core/ednet_core.dart';
 
 import 'package:art_pen/art_pen.dart';
 import 'package:art_pen/art_pen_app.dart';

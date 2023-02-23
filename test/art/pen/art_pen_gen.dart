@@ -1,4 +1,3 @@
-
 /*
 http://opensource.org/licenses/
 
@@ -31,17 +30,17 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-import 'package:dartling/dartling.dart';
+import 'package:ednet_core/ednet_core.dart';
 
 import 'package:art_pen/art_pen.dart';
 
 void genCode() {
-  var repo = new Repo();
+  var repo = new Repository();
 
   // change "Dartling" to "YourDomainName"
   var artDomain = new Domain("Art");
 
-  // change dartling to yourDomainName
+  // change ednet_core to yourDomainName
   // change Skeleton to YourModelName
   // change "Skeleton" to "YourModelName"
   fromJsonToModel(artPenModelJson, artDomain, "Pen");
@@ -52,14 +51,12 @@ void genCode() {
 }
 
 void initArtData(ArtRepo artRepo) {
-   var artModels =
-       artRepo.getDomainModels(ArtRepo.artDomainCode);
+  var artModels = artRepo.getDomainModels(ArtRepo.artDomainCode);
 
-   var artPenEntries =
-       artModels.getModelEntries(ArtRepo.artPenModelCode);
-   initArtPen(artPenEntries);
-   artPenEntries.display();
-   artPenEntries.displayJson();
+  var artPenEntries = artModels.getModelEntries(ArtRepo.artPenModelCode);
+  initArtPen(artPenEntries);
+  artPenEntries?.display();
+  artPenEntries?.displayJson();
 }
 
 void main() {

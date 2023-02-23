@@ -35,7 +35,7 @@ library art_pen;
 
 import 'dart:math';
 
-import 'package:dartling/dartling.dart';
+import 'package:ednet_core/ednet_core.dart';
 
 part 'art/pen/json/data.dart';
 part 'art/pen/json/model.dart';

@@ -3,11 +3,11 @@ part of art_pen;
 // http://www.json.org/
 // http://jsonformatter.curiousconcept.com/
 
-// rename dartling to yourDomainName
+// rename ednet_core to yourDomainName
 // rename Skeleton to YourModelName
 // do not change model or Model
 
-// src/data/dartling/skeleton/json/model.dart
+// src/data/ednet_core/skeleton/json/model.dart
 
 var artPenModelJson = r'''
 {
