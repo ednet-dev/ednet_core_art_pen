@@ -2,7 +2,7 @@ part of art_pen;
 
 // src/data/gen/art/pen/segments.dart
 
-abstract class SegmentGen extends ConceptEntity<Segment> {
+abstract class SegmentGen extends Entity<Segment> {
 
   SegmentGen(Concept concept) {
     this.concept = concept;

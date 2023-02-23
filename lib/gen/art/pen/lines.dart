@@ -2,7 +2,7 @@ part of art_pen;
 
 // src/data/gen/art/pen/lines.dart
 
-abstract class LineGen extends ConceptEntity<Line> {
+abstract class LineGen extends Entity<Line> {
 
   LineGen(Concept concept) {
     this.concept = concept;
