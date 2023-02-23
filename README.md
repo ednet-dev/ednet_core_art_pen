@@ -19,7 +19,7 @@ inspiration.
 
 [**Using DArt Pen**](http://goo.gl/OvQWwN)
 
-[**dartling: Domain Model Framework**](http://goo.gl/Fd08zZ)
+[**ednet_core: Domain Model Framework**](http://goo.gl/Fd08zZ)
 
 [*Learning Dart*](http://learningdart.org/)
 

@@ -1,7 +1,7 @@
 name: art_pen
 version: 0.0.1
 
-description: Dart Pen is a Logo language. dartling is a domain model framework.
+description: Dart Pen is a Logo language. EDNetCore is a domain model framework.
 homepage: http://ondart.me/
 documentation: http://goo.gl/OvQWwN
 environment:
