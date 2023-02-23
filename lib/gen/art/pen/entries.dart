@@ -3,7 +3,6 @@ part of art_pen;
 // src/data/gen/art/pen/entries.dart
 
 class PenEntries extends ModelEntries {
-
   PenEntries(Model model) : super(model);
 
   Map<String, Entities> newEntries() {
@@ -17,7 +16,7 @@ class PenEntries extends ModelEntries {
   Entities newEntities(String conceptCode) {
     var concept = model.concepts.singleWhereCode(conceptCode);
     if (concept == null) {
-      throw new ConceptError("${conceptCode} concept does not exist.") ;
+      throw new ConceptError("${conceptCode} concept does not exist.");
     }
     if (concept.code == "Segment") {
       return new Segments(concept);
@@ -25,13 +24,13 @@ class PenEntries extends ModelEntries {
     if (concept.code == "Line") {
       return new Lines(concept);
     }
-    return null;
+    throw EDNetException('Concept with code $conceptCode is not supported.');
   }
 
   Entity newEntity(String conceptCode) {
     var concept = model.concepts.singleWhereCode(conceptCode);
     if (concept == null) {
-      throw new ConceptError("${conceptCode} concept does not exist.") ;
+      throw new ConceptError("${conceptCode} concept does not exist.");
     }
     if (concept.code == "Segment") {
       return new Segment(concept);
@@ -39,7 +38,7 @@ class PenEntries extends ModelEntries {
     if (concept.code == "Line") {
       return new Line(concept);
     }
-    return null;
+    throw EDNetException('Concept with code $conceptCode is not supported.');
   }
 
   void fromJsonToData() {
@@ -47,6 +46,4 @@ class PenEntries extends ModelEntries {
   }
 
   Segments get segments => getEntry("Segment");
-
 }
-
