@@ -1,6 +1,6 @@
 part of art_pen;
 
-// src/data/gen/art/pen/entries.dart
+// src/data/gen/art/pen/model_entries.dart
 
 class PenEntries extends ModelEntries {
   PenEntries(Model model) : super(model);
@@ -13,7 +13,7 @@ class PenEntries extends ModelEntries {
     return entries;
   }
 
-  Entities newEntities(String conceptCode) {
+  Entities? newEntities(String conceptCode) {
     var concept = model.concepts.singleWhereCode(conceptCode);
     if (concept == null) {
       throw new ConceptError("${conceptCode} concept does not exist.");
@@ -27,7 +27,7 @@ class PenEntries extends ModelEntries {
     throw EDNetException('Concept with code $conceptCode is not supported.');
   }
 
-  Entity newEntity(String conceptCode) {
+  Entity? newEntity(String conceptCode) {
     var concept = model.concepts.singleWhereCode(conceptCode);
     if (concept == null) {
       throw new ConceptError("${conceptCode} concept does not exist.");
