@@ -2,7 +2,7 @@ pubspec.yaml
 
 name: art_pen
 version: 2.0.2
-author: Dzenan Ridjanovic <dzenanr@gmail.com>
+
 description: DArt Pen is a Logo language. EDNetCore is a domain model framework.
 homepage: http://ondart.me/
 documentation: http://goo.gl/OvQWwN
@@ -16,7 +16,7 @@ dependencies:
 
 name: art_pen
 version: 2.0.1
-author: Dzenan Ridjanovic <dzenanr@gmail.com>
+
 description: DArt Pen is a version of the Logo language. EDNetCore is a domain model framework.
 homepage: http://ondart.me/
 documentation: http://goo.gl/OvQWwN
@@ -27,7 +27,7 @@ dependencies:
   ednet_core:
     git: git@github.com:ednet-dev/ednet_core.git
   ednet_core_default_app:
-    git: git://github.com/dzenanr/ednet_core_default_app.git
+    git: git://github.com/ednet-dev/ednet_core_default_app.git
     
 ?
 dependencies:
@@ -35,7 +35,7 @@ dependencies:
   ednet_core:
     git: 'https://github.com/ednet-dev/ednet_core.git'
   ednet_core_default_app:
-    git: 'https://github.com/dzenanr/ednet_core_default_app.git'
+    git: 'https://github.com/ednet-dev/ednet_core_default_app.git'
 ?
 
 dependencies:

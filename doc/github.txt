@@ -40,7 +40,7 @@ Next steps:
   git status
   git add .
   git commit -m 'initial version'
-  git remote add origin https://github.com/dzenanr/art_pen.git
+  git remote add origin https://github.com/ednet-dev/art_pen.git
   git push -u origin master
 
 ----------------------------------------------------------------------
@@ -50,14 +50,14 @@ Git with Git Bash
 Clone a remote repository into a local repository.
 
 cd git/dart/game/art_pen
-git clone https://github.com/dzenanr/art_pen.git
+git clone https://github.com/ednet-dev/art_pen.git
 cd art_pen
 
 Read+Write:
-https://github.com/dzenanr/art_pen.git
+https://github.com/ednet-dev/art_pen.git
 
 Read only:
-git://github.com/dzenanr/art_pen.git
+git://github.com/ednet-dev/art_pen.git
 
 Get the latest changes from the remote repository
 

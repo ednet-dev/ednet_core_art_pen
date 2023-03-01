@@ -1,4 +1,4 @@
-## Version history of [art_pen](https://github.com/dzenanr/art_pen)
+## Version history of [art_pen](https://github.com/ednet-dev/art_pen)
 
 based on [Semantic Versioning](http://semver.org/)
 

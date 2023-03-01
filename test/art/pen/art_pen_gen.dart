@@ -35,7 +35,7 @@ import 'package:ednet_core/ednet_core.dart';
 import 'package:art_pen/art_pen.dart';
 
 void genCode() {
-  var repo = new Repository();
+  var repo = new CoreRepository();
 
   // change "EDNetCore" to "YourDomainName"
   var artDomain = new Domain("Art");
