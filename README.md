@@ -8,7 +8,7 @@ If you are less artistic, use commands, based on the Logo programming language
 for children, to learn basic programming concepts by drawing.
 
 Dependent on [EDNetCore](https://github.com/ednet-dev/ednet_core).
-After cloning it, open the project in Dart Editor with Pub.
+After cloning it, open the project in IDE with Pub.
 Run d_art_pen.html in Dartium or as JavaScript.
 
 For
