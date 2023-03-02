@@ -3,7 +3,7 @@
 [licenses](http://opensource.org/licenses/)
 [3-clause license ("New BSD License" or "Modified BSD License")](http://en.wikipedia.org/wiki/BSD_license)
 
-Copyright (c) 2023, [art_pen](https://github.com/ednet-dev/art_pen) authors
+Copyright (c) 2023, [ednet_core_art_pen](https://github.com/ednet-dev/ednet_core_art_pen) authors
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
