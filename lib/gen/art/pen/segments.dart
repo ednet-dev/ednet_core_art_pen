@@ -7,7 +7,7 @@ abstract class SegmentGen extends Entity<Segment> {
   SegmentGen(Concept concept) {
     this.concept = concept;
     Concept lineConcept = concept.model.concepts.singleWhereCode("Line");
-    setChild("lines", new Lines(lineConcept));
+    setChild("relations", new Lines(lineConcept));
   }
 
   bool get visible => getAttribute("visible");
@@ -19,7 +19,7 @@ abstract class SegmentGen extends Entity<Segment> {
   int get width => getAttribute("width");
   void set width(int a) { setAttribute("width", a); }
 
-  Lines get lines => getChild("lines");
+  Lines get lines => getChild("relations");
 
   Segment newEntity() => new Segment(concept);
 

@@ -12,24 +12,24 @@ part of art_pen;
 var artPenModelJson = r'''
 {
    "width":990,
-   "lines":[
+   "relations":[
       {
-         "box2box1Min":"1",
-         "box1Name":"Segment",
-         "box1box2Min":"0",
-         "box2Name":"Line",
+         "toFromMin":"1",
+         "from":"Segment",
+         "fromToMin":"0",
+         "to":"Line",
          "category":"relationship",
-         "box2box1Id":false,
-         "box2box1Name":"segment",
-         "box1box2Id":false,
-         "box1box2Name":"lines",
-         "box1box2Max":"N",
+         "toFromId":false,
+         "toFromName":"segment",
+         "fromToId":false,
+         "fromToName":"relations",
+         "fromToMax":"N",
          "internal":true,
-         "box2box1Max":"1"
+         "toFromMax":"1"
       }
    ],
    "height":580,
-   "boxes":[
+   "concepts":[
       {
          "entry":true,
          "name":"Segment",
@@ -37,7 +37,7 @@ var artPenModelJson = r'''
          "y":41,
          "width":80,
          "height":80,
-         "items":[
+         "attributes":[
             {
                "sequence":50,
                "category":"required",
@@ -74,7 +74,7 @@ var artPenModelJson = r'''
          "y":149,
          "width":100,
          "height":140,
-         "items":[
+         "attributes":[
             {
                "sequence":30,
                "category":"required",
